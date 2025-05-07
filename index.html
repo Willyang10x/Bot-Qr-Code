@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code Generator - WG</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <img src="logo-wg.png" alt="Logo" class="logo">
+    <h1>Gerador de QR Code</h1>
+
+    <input type="text" id="entrada" placeholder="Cole seu link aqui">
+    <button onclick="gerarQRCode()">Gerar QR Code</button>
+
+    <div id="qr-code"></div>
+
+    <a id="baixar" download="qrcode.png" style="display: none;">📥 Baixar QR Code</a>
+  </div>
+
+  <script src="bot.js"></script>
+</body>
+</html>
