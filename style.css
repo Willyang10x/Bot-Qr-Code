@@ -1,3 +1,4 @@
+/* Mantém seu estilo atual */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -42,6 +43,7 @@ input[type="text"], input[type="file"] {
   border-radius: 8px;
   border: none;
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 button {
@@ -52,6 +54,7 @@ button {
   border-radius: 8px;
   cursor: pointer;
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 button:hover {
@@ -149,71 +152,61 @@ footer {
   color: #ffffff;
 }
 
-
-
+/* 🔽🔽 RESPONSIVIDADE 🔽🔽 */
 @media (max-width: 768px) {
   .container {
     padding: 1.5rem;
-    width: 90%;
-    max-width: 90%; 
+    width: 95%;
   }
 
-  .logo {
-    width: 70px; 
-  }
-
-  input[type="text"], input[type="file"] {
-    padding: 0.6rem; 
+  h1 {
+    font-size: 1.5rem;
   }
 
   button {
-    padding: 0.6rem 1.2rem; 
+    width: 100%;
+    font-size: 1rem;
   }
 
-  footer {
-    padding: 1.5rem 1rem;
-    font-size: 0.8rem;
+  #baixar {
+    font-size: 0.95rem;
+    width: 100%;
   }
 
   .container-rodape {
+    padding: 1rem;
     gap: 1rem;
   }
 
   .info-contato a,
   .redes-sociais a {
-    font-size: 1rem; 
+    font-size: 1rem;
+  }
+
+  .descricao-empresa {
+    font-size: 0.85rem;
+  }
+
+  .logo,
+  .logo-img {
+    width: 60px;
   }
 }
 
 @media (max-width: 480px) {
-  .container {
-    padding: 1rem;
-    max-width: 100%;
+  h1 {
+    font-size: 1.3rem;
   }
 
-  .logo {
-    width: 60px; 
+  input[type="text"] {
+    font-size: 0.9rem;
   }
 
-  input[type="text"], input[type="file"] {
-    padding: 0.5rem; 
+  .descricao-empresa {
+    font-size: 0.75rem;
   }
 
-  button {
-    padding: 0.5rem 1rem; 
-  }
-
-  footer {
-    padding: 1rem;
-    font-size: 0.7rem; 
-  }
-
-  .container-rodape {
-    gap: 0.8rem;
-  }
-
-  .info-contato a,
-  .redes-sociais a {
-    font-size: 0.9rem; 
+  .direitos {
+    font-size: 0.75rem;
   }
 }
