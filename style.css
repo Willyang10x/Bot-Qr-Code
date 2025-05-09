@@ -1,4 +1,3 @@
-/* Mantém seu estilo atual */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,12 +5,9 @@ body {
   background-size: 400% 400%;
   animation: moverGradiente 15s ease infinite;
   color: #fff;
+  min-height: 105vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  text-align: center;
   overflow-x: hidden;
 }
 
@@ -21,15 +17,23 @@ body {
   100% { background-position: 0% 50%; }
 }
 
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
 .container {
-  margin-top: 50px;
   background: rgba(255, 255, 255, 0.1);
   padding: 2rem;
   border-radius: 12px;
   backdrop-filter: blur(8px);
-  width: 90%;
-  max-width: 400px;
+  width: 100%;
+  max-width: 500px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  text-align: center;
 }
 
 .logo {
@@ -83,7 +87,6 @@ button:hover {
 }
 
 footer {
-  margin-top: 50px;
   padding: 2rem 1rem;
   color: #fff;
   font-size: 0.9rem;
@@ -91,9 +94,7 @@ footer {
   backdrop-filter: blur(8px);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   width: 100%;
-  clear: both;
-  position: relative;
-  bottom: 0;
+  text-align: center;
 }
 
 .container-rodape {
@@ -101,8 +102,8 @@ footer {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1.5rem;
+  align-items: center;
   text-align: center;
 }
 
@@ -152,61 +153,30 @@ footer {
   color: #ffffff;
 }
 
-/* 🔽🔽 RESPONSIVIDADE 🔽🔽 */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .container {
     padding: 1.5rem;
-    width: 95%;
+    max-width: 95%;
   }
 
   h1 {
     font-size: 1.5rem;
   }
 
-  button {
-    width: 100%;
-    font-size: 1rem;
-  }
-
-  #baixar {
-    font-size: 0.95rem;
-    width: 100%;
-  }
-
-  .container-rodape {
-    padding: 1rem;
-    gap: 1rem;
-  }
-
-  .info-contato a,
-  .redes-sociais a {
-    font-size: 1rem;
-  }
-
-  .descricao-empresa {
-    font-size: 0.85rem;
-  }
-
-  .logo,
-  .logo-img {
-    width: 60px;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.3rem;
-  }
-
   input[type="text"] {
-    font-size: 0.9rem;
+    font-size: 2rem;
   }
 
-  .descricao-empresa {
-    font-size: 0.75rem;
+  button {
+    font-size: 2rem;
+    width: 100%;
   }
 
-  .direitos {
-    font-size: 0.75rem;
+  .logo {
+    width: 90px;
+  }
+
+  .logo-img {
+    width: 90px;
   }
 }
