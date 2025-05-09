@@ -17,6 +17,10 @@ body {
   100% { background-position: 0% 50%; }
 }
 
+#entrada{
+  text-align: center;
+}
+
 main {
   flex: 1;
   display: flex;
@@ -158,8 +162,8 @@ footer {
     overflow-x: hidden;
   }
   .container {
-    padding: 1.5rem;
-    max-width: 95%;
+    padding: 1.5rem 1rem;
+    max-width: 100%;
   }
 
   h1 {
